@@ -50,7 +50,7 @@ async function run() {
       const result = await productCollection.find(query).toArray()
       res.send(result)
     })
-    // Send a ping to confirm a successful connection
+    // Send a ping to confirm a successful connection server site
     await client.db("admin").command({ ping: 1 });
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!"
